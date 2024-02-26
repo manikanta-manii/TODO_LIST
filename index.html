@@ -68,7 +68,7 @@
           id="task-ip"
           type="text"
           name="task"
-          placeholder="Task"
+          placeholder="Enter a task"
           pattern=".{1,}"
         />
         <button
@@ -96,6 +96,7 @@
       let arr = [];
       function addTask() {
         var task = document.getElementById("task-ip").value;
+        document.getElementById("task-ip").value = "";
         if (task == "") {
           alert("ENTER A TASK");
           return;
